@@ -19,6 +19,7 @@ const User = require("./models/user.js");
 const listingRouter = require("./routes/listing.js");
 const reviewsRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
+const port = process.env.PORT || 4000;
 
 const dbUrl = process.env.ATLASDB_URL;
 main()
@@ -106,6 +107,6 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("server is listening to port 8080");
 });
