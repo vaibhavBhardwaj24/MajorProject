@@ -1,14 +1,12 @@
 {
-  "engine": {
+  "engines": {
     "node": "20.16.0"
   },
   "name": "majorproject",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node init/index.js",
-    "build":"echo 'No build needed'"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
