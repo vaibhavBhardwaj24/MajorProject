@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const initdata = require("./data.js");
 const Listing = require("../models/listing.js");
-const MONGO_URL = process.env.ATLASDB_URL;
+const MONGO_URL =
+  process.env.ATLASDB_URL ||
+  "mongodb+srv://pooja_yadav:losAltos@cluster0.duchufs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 main()
   .then(() => {
     console.log("connected to DB");
